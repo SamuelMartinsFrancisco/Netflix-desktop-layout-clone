@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&family=Rubik:wght@500&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+
+body
+{
+   background: #000; 
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90vh 110vh;
+    grid-template-areas: "mainTitle"
+                         "movieListContainer"
+}
+
+.header
+{
+    width: 96vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 45px;
+    position: fixed;
+    background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.36), rgba(0,0,0,0.2), rgba(0,0,0,0.0));
+    z-index: 100;
+}
+
+#menuIcon, #searchIcon, #moreIcon
+{
+    font-size: 30px;
+}
+
+#menuIcon
+{
+    position: relative;
+    bottom: 11px;
+    margin-right: 20px;
+}
+
+#moreIcon
+{
+    padding-left: 35px;
+}
+
+.logo
+{
+    height: 53px;
+}
+
+.material-icons-outlined
+{ 
+    color: #fff; 
+    font-size: 200px;
+}
+
+.mainTitle
+{
+    
+    background: linear-gradient(to bottom ,rgba(0,0,0,0.1),rgba(0,0,0,0.2), rgba(0,0,0,1)), url('./images/doug.jpg');
+    background-size: cover; 
+}
+
+.mainTitle img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info
+{
+    max-width: 50%;
+    position: relative;
+    top: 200px;
+    left: 85px;
+}
+
+.title
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 48px;
+}
+
+.buttons
+{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 100px;
+}
+
+.buttons .button
+{
+    padding: 13px 45px 13px 45px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 4.5px;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.buttons .button:hover
+{
+    background: rgba(255,255,255, 0.9);
+    color: #000;
+    cursor: pointer;
+}
+
+.buttons .button:hover > #play, .buttons .button:hover > #add
+{
+    color: #000;
+}
+
+#play, #add
+{
+    font-size: 35px;
+}
+
+.sinopse
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    top: 130px;
+    max-width: 750px;
+}
+
+.movieListContainer
+{
+    padding: 0px 30px 0px 30px;
+}
+
+.movieList
+{
+    display: flex;
+}
+
+.movie
+{
+    flex: 1 1 250px;
+    margin: 5px;
+    height: 250px;
+    /* width: 9.66666666667vw;*/
+    background: rgba(255,255,255,0.5);
+}
+
+.watchingMovieList
+{
+    display: flex;
+    margin: 40px 0 40px 0;
+}
+
+.watchingMovie
+{
+    flex: 1 1 200px;
+    margin: 5px;
+    height: 230px;
+    width: 9.66666666667vw;
+    background: rgba(255,255,255,0.5);
+}
