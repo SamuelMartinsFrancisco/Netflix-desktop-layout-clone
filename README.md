@@ -1,2 +1,2 @@
 # Clone-Netflix
-Clone da tela inicial do aplicativo desktop Netflix com HTML e CSS
+Tentativa de fazer uma cópia simples do layout da tela inicial do aplicativo desktop Netflix usando HTML e CSS.
