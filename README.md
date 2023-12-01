@@ -1,5 +1,5 @@
 # Clone do layout do Netflix desktop
-Um clone do layout da tela inicial do aplicativo desktop Netflix usando HTML e CSS.
+Um clone do layout da tela inicial do aplicativo desktop Netflix, feito com HTML e CSS.
 
 <br><br>
 
